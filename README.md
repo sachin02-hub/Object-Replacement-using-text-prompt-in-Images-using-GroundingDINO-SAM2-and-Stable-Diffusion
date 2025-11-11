@@ -146,9 +146,10 @@ Segmented images with semi-transparent color overlays:
 
 <img width="1104" height="483" alt="image" src="https://github.com/user-attachments/assets/5019ae1b-3b4c-46df-8f3d-1b15ec5d3ec0" />
 
-Output Image Generated based on the Prompt "replace with phone booth":
+Output Image Generated based on the Prompt "replace with Flower pot":
 
-<img width="389" height="389" alt="image" src="https://github.com/user-attachments/assets/9636fd3b-834c-42bc-9fb3-4f0039e126c9" />
+<img width="389" height="389" alt="image" src="https://github.com/user-attachments/assets/5714f339-5cdf-4019-b828-ce4fe186c7d4" />
+
 
 
 ## How It Works for Video based replacement
