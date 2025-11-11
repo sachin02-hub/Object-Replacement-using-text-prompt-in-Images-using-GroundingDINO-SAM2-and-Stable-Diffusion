@@ -4,6 +4,10 @@ This project performs object detection, segmentation, and removal (or replacemen
 
 It combines grounding-based object detection with precise segmentation and realistic background inpainting for seamless, temporally consistent results across video frames.
 
+```bash
+NOTE: The project was run on Google Colab with T4 GPU
+```
+
 ## Features
 
 - Text-based object detection using Grounding DINO
@@ -130,7 +134,7 @@ wget -q https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_la
 
 ## Results
 
-For Image based replacement:
+### For Image based replacement:
 
 Input Image
 
@@ -149,6 +153,24 @@ Output Image Generated based on the Prompt "replace with phone booth":
 <img width="389" height="389" alt="image" src="https://github.com/user-attachments/assets/9636fd3b-834c-42bc-9fb3-4f0039e126c9" />
 
 
+## How It Works for Video based replacement
+
+- Extract frames from the input video using `supervision`.
+
+- Detect objects matching a text prompt with Grounding DINO.
+
+- Generate segmentation masks for detected regions using SAM2.
+
+- Inpaint or replace the object area using Stable Diffusion or Kandinsky.
+
+- Use optical flow to blend consecutive frames for temporal consistency.
+
+- Reconstruct the final video.
+
+```bash
+NOTE: Current Attempt in implementing Video based object modification does work but it has temporal inconsistency. The modified section of the video has artifacts across frames and is visible.
+```
+
 ## Configuration
 
 You can modify the following parameters in the script:
@@ -161,3 +183,8 @@ TEXT_THRESHOLD = 0.25
 SCALE_FACTOR = 1.0
 NUM_FRAMES = 80  # Limit for testing
 ```
+
+## To do
+
+- Optimize the pipeline for faster results
+- Solve the issue of Temporal inconsistency for Smooth transition between frames
