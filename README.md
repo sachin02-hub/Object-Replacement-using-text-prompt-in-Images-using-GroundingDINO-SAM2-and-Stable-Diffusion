@@ -133,15 +133,19 @@ wget -q https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_la
 For Image based replacement:
 
 Input Image
+
 <img width="432" height="411" alt="image" src="https://github.com/user-attachments/assets/c82675d5-82dd-4773-91de-cc0312c2b720" />
 
 Annotated image with bounding boxes and labels:
+
 <img width="794" height="713" alt="image" src="https://github.com/user-attachments/assets/5ba74791-91ac-4443-a52c-2600087ef5cb" />
 
 Segmented images with semi-transparent color overlays:
+
 <img width="1104" height="483" alt="image" src="https://github.com/user-attachments/assets/5019ae1b-3b4c-46df-8f3d-1b15ec5d3ec0" />
 
-Output Image Generated based on the Prompt "replace with phone booth"
+Output Image Generated based on the Prompt "replace with phone booth":
+
 <img width="389" height="389" alt="image" src="https://github.com/user-attachments/assets/9636fd3b-834c-42bc-9fb3-4f0039e126c9" />
 
 
