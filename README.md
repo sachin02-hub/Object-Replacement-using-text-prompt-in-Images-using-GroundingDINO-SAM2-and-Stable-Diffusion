@@ -119,7 +119,7 @@ wget -q https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_la
 
 ## How It Works
 
-- Extract frames from the input video using `supervision`.
+- Load an input image into memory.
 
 - Detect objects matching a text prompt with Grounding DINO.
 
@@ -127,9 +127,7 @@ wget -q https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_la
 
 - Inpaint or replace the object area using Stable Diffusion or Kandinsky.
 
-- Use optical flow to blend consecutive frames for temporal consistency.
-
-- Reconstruct the final video.
+- Save the final image.
 
 
 ## Results
